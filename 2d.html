@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modern Frame Example - Daily Life</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .frame {
+            width: 100%;
+            height: 33.3vh; /* Divide into 3 vertical sections */
+            border: none;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Daily Life - Nature Themed Frames</h1>
+    <div class="container">
+        <!-- Image Frame -->
+        <iframe class="frame" src="https://via.placeholder.com/800x300?text=Beautiful+Nature+Scene" title="Nature Image"></iframe>
+
+        <!-- Paragraph Frame -->
+        <iframe class="frame" srcdoc="<p style='padding:20px;'>Spending time in nature improves your mood and mental well-being. A simple walk in the park can relieve stress and bring clarity to your mind.</p>" title="Nature Paragraph"></iframe>
+
+        <!-- Hyperlink Frame -->
+        <iframe class="frame" srcdoc="
+            <div style='padding:20px;'>
+                <p>Explore more about nature:</p>
+                <ul>
+                    <li><a href='https://www.nationalgeographic.com' target='_blank'>National Geographic</a></li>
+                    <li><a href='https://www.wwf.org' target='_blank'>World Wildlife Fund</a></li>
+                    <li><a href='https://www.nature.org' target='_blank'>The Nature Conservancy</a></li>
+                </ul>
+            </div>" title="Useful Links"></iframe>
+    </div>
+</body>
+</html>
